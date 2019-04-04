@@ -1,0 +1,1 @@
+curl -ku admin:P@ssw0rd -H "Content-Type: application/json" -X POST -d '{"description":"Tower CLI", "application":null, "scope":"write"}' https://10.10.7.179/api/v2/users/1/personal_tokens/ | python -m json.tool | grep -w token > token.txt
